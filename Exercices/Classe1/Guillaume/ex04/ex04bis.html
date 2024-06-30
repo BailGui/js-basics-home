@@ -12,34 +12,37 @@
     <h1 class="text-center text-5xl m-2">Death Stranding 2 - On the beach</h1>
 
     <!-- Pause button -->
-    <div class="flex flex-row">
-    <button id="pauseButton" class=" basis-full mb-5 text-center text-white" onclick="togglePause()">Pause</button>
+    <div class="container">
+    <div class="flex justify-center">
+    <button id="pauseButton"  class="bg-blue-500 hover:bg-blue-400 text-white py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded mb-2 text-center text-small" width="10%" onclick="togglePause()">Pause</button>
+    </div>
     </div>
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides1 fade">
+      <div class="mySlides fade">
         <div class="numbertext">1 / 4</div>
-        <iframe width="100%" height="560" src="https://www.youtube.com/embed/4NSjsZcojMM?si=rK7aANw2fdmVFkDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div class="text">Caption Text</div>
+        <iframe width="100%" height="560" class="rounded-lg border-8 border-blue-500 border-opacity-50" src="https://www.youtube.com/embed/4NSjsZcojMM?si=rK7aANw2fdmVFkDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        <div class="text">State of play 2024</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">2 / 4</div>
-        <img src="img2.jpg" class="rounded" style="width: 100%" />
-        <div class="text">Caption Two</div>
+        <img src="img2.jpg" class="rounded-lg border-8 border-blue-500 border-opacity-50" style="width: 100%" />
+        <div class="text">Sam Porter Bridges and Lou</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">3 / 4</div>
-        <img src="img3.jpg" class="rounded" style="width: 100%" />
-        <div class="text">Caption Three</div>
+        <img src="img3.jpg" class="rounded-lg border-8 border-blue-500 border-opacity-50" style="width: 100%" />
+        <div class="text">Higgs</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
-        <img src="img1.webp"  class="rounded" style="width: 100%" />
-        <div class="text">Caption Four</div>
+        <img src="img1.webp"  class="rounded-lg border-8 border-blue-500 border-opacity-50" style="width: 100%" />
+        <div class="text">Fragile and Lou</div>
       </div>
 
       <!-- Next and previous buttons -->
@@ -74,11 +77,11 @@
     function showSlides() {
       let i;
       let slides = document.getElementsByClassName("mySlides");
-      let slides1 = document.getElementsByClassName("mySlides1");
+      /*let slides1 = document.getElementsByClassName("mySlides1");*/
       let dots = document.getElementsByClassName("dot");
-      for (i = 0; i > slides1.length; i++){
-        slides1.style.display = "none";
-      }
+      /*if (slideIndex > slides1.length){
+        slides1[i].style.display = "none";
+      }*/
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
@@ -92,7 +95,7 @@
     }
 
     function startSlides() {
-      slideInterval = setInterval(showSlides, 3000); // Change slide every 3 seconds
+      slideInterval = setInterval(showSlides, 5000); // Change slide every 3 seconds
     }
 
     function stopSlides() {
