@@ -4,7 +4,7 @@
 }
 
 body{
-  background-image: url(hideo-kojima.avif);
+  background-image: url(hideo-kojima-1.avif);
   background-repeat: no-repeat;
 }
 
@@ -26,6 +26,10 @@ h1{
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides1 {
+  display: block;
 }
 
 /* Next & previous buttons */
