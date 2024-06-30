@@ -4,8 +4,9 @@
 }
 
 body{
-  background-image: url(hideo-kojima.avif);
+  background-image: url(hideo-kojima-connecting-worlds.webp);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1{
