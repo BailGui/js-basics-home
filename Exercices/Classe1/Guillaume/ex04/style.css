@@ -1,3 +1,19 @@
+@font-face {
+  font-family: deathStranding ;
+  src: url(Sackers\ Gothic\ Light\ AT.otf);
+}
+
+body{
+  background-image: url(hideo-kojima.avif);
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-family: deathStranding;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
